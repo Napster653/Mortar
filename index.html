@@ -3,25 +3,37 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-
+	<script src="scripts/script.js"></script>
 </head>
 <body>
 
 	<nav>
-		<button onclick="document.getElementById('currentMap').src='images/maps/al-basrah.png'">Al Basrah</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/chora.png'">Chora</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/fools-road.png'">Fool's Road</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/gorodok.png'">Gorodok</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/kohat-toi.png'">Kohat Toi</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/kokan.png'">Kokan</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/logar-valley.png'">Logar Valley</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/narva.png'">Narva</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/op-first-light.png'">OP First Light</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/sumari-bala.png'">Sumari Bala</button>
-		<button onclick="document.getElementById('currentMap').src='images/maps/yehorivka.png'">Yehorivka</button>
+		<button onclick="changeMap('al-basrah')">Al Basrah</button>
+		<button onclick="changeMapB('chora')">Chora</button>
+		<button onclick="changeMapB('fools-road')">Fool's Road</button>
+		<button onclick="changeMap('gorodok')">Gorodok</button>
+		<button onclick="changeMapB('kohat-toi')">Kohat Toi</button>
+		<button onclick="changeMap('kokan')">Kokan</button>
+		<button onclick="changeMap('logar-valley')">Logar Valley</button>
+		<button onclick="changeMap('narva')">Narva</button>
+		<button onclick="changeMap('op-first-light')">OP First Light</button>
+		<button onclick="changeMap('sumari-bala')">Sumari Bala</button>
+		<button onclick="changeMap('yehorivka')">Yehorivka</button>
 	</nav>
+	<p>
+		Left click: Target<br>
+		Right click: Mortar
+	</p>
 
-	<img id="currentMap" src="images/maps/al-basrah.png">
+	<img	id="currentMap"
+			src="images/maps/al-basrah.png">
 
+	<img id="mortar" src="images/assets/mortar.png">
+	<img id="target" src="images/assets/target.png">
+
+	<section>
+		<input type="text" id="form_x" size="4">
+		<input type="text" id="form_y" size="4">
+	</section>
 </body>
 </html> 
