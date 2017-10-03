@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
 <body>
 
-<h1>Welcome</h1>
+	<nav>
+		<button onclick="document.getElementById('currentMap').src='images/maps/al-basrah.png'">Al Basrah</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/chora.png'">Chora</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/fools-road.png'">Fool's Road</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/gorodok.png'">Gorodok</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/kohat-toi.png'">Kohat Toi</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/kokan.png'">Kokan</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/logar-valley.png'">Logar Valley</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/narva.png'">Narva</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/op-first-light.png'">OP First Light</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/sumari-bala.png'">Sumari Bala</button>
+		<button onclick="document.getElementById('currentMap').src='images/maps/yehorivka.png'">Yehorivka</button>
+	</nav>
+
+	<img id="currentMap" src="images/maps/al-basrah.png">
 
 </body>
 </html> 

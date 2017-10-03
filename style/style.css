@@ -1,0 +1,46 @@
+body
+{
+	background-color: black;
+	display: block;
+	margin: 0 auto;
+}
+nav
+{
+	display: block;
+	float: left;
+}
+	nav button
+	{
+		background-color: black;
+		border: 1px solid yellow;
+		color: white;
+		display: block;
+		font-size: 1.5em;
+		margin: 5px;
+		padding: 10px;
+		text-decoration: none;
+	}
+	nav button:last-child
+	{
+		border-bottom: 1px solid yellow;
+	}
+	nav button:hover
+	{
+		background-color: yellow;
+		color: black;
+		cursor: pointer;
+	}
+	nav button:focus
+	{
+		outline: none;
+	}
+img
+{
+	display: block;
+	left: 50%;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	transform: translateX(-50%);
+}
