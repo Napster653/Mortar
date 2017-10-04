@@ -6,10 +6,13 @@ body
 }
 nav
 {
-	display: block;
+	background-color: grey;
 	float: left;
-	overflow-y: auto;
+	height: 610px;
+	overflow: auto;
+	position: absolute;
 	width: 12em;
+	z-index: 2;
 }
 	nav button
 	{
@@ -44,22 +47,29 @@ nav
 	max-height: 100%;
 	max-width: 80%;
 	position: absolute;
+	z-index: 1;
 }
 #mortar
 {
 	display: block;
+	left: 0px;
 	position: absolute;
+	top: 0px;
 	transform: translate(-50%,-50%);
 	visibility: hidden;
 	width: 20px;
+	z-index: 2;
 }
 #target
 {
 	display: block;
+	left: 0px;
 	position: absolute;
+	top: 0px;
 	transform: translate(-50%,-50%);
 	visibility: hidden;
 	width: 20px;
+	z-index: 2;
 }
 section
 {
