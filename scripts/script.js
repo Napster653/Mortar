@@ -68,7 +68,7 @@ function artilleryCalc(mx, my, tx, ty)
 	{
 		deg = 360 + deg;
 	}
-	document.getElementById("form_deg").value = deg;
+	document.getElementById("form_deg").value = Math.round(deg * 100) / 100;
 
 	var dis = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
 	if (dis < 50)
@@ -88,7 +88,8 @@ function artilleryCalc(mx, my, tx, ty)
 				var mil_y = (milliradians[i] - milliradians[i - 1]);
 				var mil_x = (distances[i] - distances[i - 1]);
 				var m = mil_y / mil_x;
-				document.getElementById("form_mil").value = (m * (dis - distances[i-1]) + milliradians[i-1]);
+				var mil = (m * (dis - distances[i-1]) + milliradians[i-1]);
+				document.getElementById("form_mil").value = Math.round(mil * 100) / 100;
 				break;
 			}
 		}

@@ -6,28 +6,29 @@ body
 }
 nav
 {
-	background-color: grey;
+	/*border: 1px solid white;*/
 	float: left;
-	height: 610px;
-	overflow: auto;
+	height: 550px;
+	overflow: hidden;
 	position: absolute;
-	width: 12em;
+	width: 200px;
 	z-index: 2;
 }
 	nav button
 	{
 		background-color: black;
-		border: 1px solid yellow;
+		border: 1px solid white;
+		border-bottom: none;
 		color: white;
 		display: block;
 		font-size: 1.5em;
-		margin: 5px;
 		padding: 10px;
 		text-decoration: none;
+		width: 100%;
 	}
 	nav button:last-child
 	{
-		border-bottom: 1px solid yellow;
+		border-bottom: 1px solid white;
 	}
 	nav button:hover
 	{
@@ -68,15 +69,35 @@ nav
 	top: 0px;
 	transform: translate(-50%,-50%);
 	visibility: hidden;
-	width: 20px;
+	width: 32px;
 	z-index: 2;
 }
 section
 {
+	border: 1px solid white;
+	left: 0;
+	padding: 10px 0;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 560px;
+	width: 200px;
+	z-index: 3;
 }
+	section h1
+	{
+		color: white;
+		padding: 2px 0;
+		font-size: 2em;
+		text-align: center;
+		width: 100%;
+	}
+	section input
+	{
+		display: block;
+		font-size: 2em;
+		margin: 0 auto;
+		text-align: right;
+		width: 90%;
+	}
 p
 {
 	color: red;
