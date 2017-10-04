@@ -1,11 +1,11 @@
 # Mortar
 Napster's Squad Mortar Calculator (Web version)
 
+Hosted at https://napster653.github.io/Mortar/
+
 This is a calculator for the videogame "Squad" http://store.steampowered.com/app/393380/Squad/
 
-=============
-**  USAGE  **
-=============
+USAGE
 
 1. Choose a map on the left panel.
   -The default map is Al Basrah.
