@@ -74,6 +74,7 @@ nav
 }
 section
 {
+	background-color: black;
 	border: 1px solid white;
 	left: 0;
 	padding: 10px 0;
